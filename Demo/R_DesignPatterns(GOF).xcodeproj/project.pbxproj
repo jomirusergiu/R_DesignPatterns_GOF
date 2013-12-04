@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D0184F730D0075C72D /* Factory Method.m */; };
+		84ABA0D3184F77D70075C72D /* FactoryMethod.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D2184F77D70075C72D /* FactoryMethod.png */; };
+		84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D6184F9EEF0075C72D /* Prototype.m */; };
+		84ABA0D9184FA5F90075C72D /* Prototype.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D8184FA5F90075C72D /* Prototype.png */; };
+		84ABA0DD184FAC4A0075C72D /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0DC184FAC4A0075C72D /* Singleton.m */; };
+		84ABA0DF184FAF3A0075C72D /* Singleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0DE184FAF3A0075C72D /* Singleton.png */; };
 		84AC67BC184EACC40025B393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BB184EACC40025B393 /* Foundation.framework */; };
 		84AC67BE184EACC40025B393 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BD184EACC40025B393 /* CoreGraphics.framework */; };
 		84AC67C0184EACC40025B393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BF184EACC40025B393 /* UIKit.framework */; };
@@ -22,6 +28,10 @@
 		84AC67E0184EACC40025B393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BF184EACC40025B393 /* UIKit.framework */; };
 		84AC67E8184EACC40025B393 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84AC67E6184EACC40025B393 /* InfoPlist.strings */; };
 		84AC67EA184EACC40025B393 /* R_DesignPatterns_GOF_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC67E9184EACC40025B393 /* R_DesignPatterns_GOF_Tests.m */; };
+		84AC67F5184EACEC0025B393 /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC67F4184EACEC0025B393 /* AbstractFactory.m */; };
+		84AC67F7184EB7B90025B393 /* AbstractFactory.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AC67F6184EB7B90025B393 /* AbstractFactory.png */; };
+		84AC67F9184EC3030025B393 /* Builder.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AC67F8184EC3030025B393 /* Builder.png */; };
+		84AC67FC184EC3190025B393 /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AC67FB184EC3190025B393 /* Builder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84ABA0CF184F730D0075C72D /* Factory Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Factory Method.h"; sourceTree = "<group>"; };
+		84ABA0D0184F730D0075C72D /* Factory Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Factory Method.m"; sourceTree = "<group>"; };
+		84ABA0D2184F77D70075C72D /* FactoryMethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FactoryMethod.png; sourceTree = "<group>"; };
+		84ABA0D5184F9EEF0075C72D /* Prototype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prototype.h; sourceTree = "<group>"; };
+		84ABA0D6184F9EEF0075C72D /* Prototype.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prototype.m; sourceTree = "<group>"; };
+		84ABA0D8184FA5F90075C72D /* Prototype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prototype.png; sourceTree = "<group>"; };
+		84ABA0DB184FAC4A0075C72D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		84ABA0DC184FAC4A0075C72D /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		84ABA0DE184FAF3A0075C72D /* Singleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Singleton.png; sourceTree = "<group>"; };
 		84AC67B8184EACC40025B393 /* R_DesignPatterns(GOF).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R_DesignPatterns(GOF).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AC67BB184EACC40025B393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84AC67BD184EACC40025B393 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +74,12 @@
 		84AC67E5184EACC40025B393 /* R_DesignPatterns(GOF)Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "R_DesignPatterns(GOF)Tests-Info.plist"; sourceTree = "<group>"; };
 		84AC67E7184EACC40025B393 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84AC67E9184EACC40025B393 /* R_DesignPatterns_GOF_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = R_DesignPatterns_GOF_Tests.m; sourceTree = "<group>"; };
+		84AC67F3184EACEC0025B393 /* AbstractFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		84AC67F4184EACEC0025B393 /* AbstractFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
+		84AC67F6184EB7B90025B393 /* AbstractFactory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AbstractFactory.png; sourceTree = "<group>"; };
+		84AC67F8184EC3030025B393 /* Builder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Builder.png; sourceTree = "<group>"; };
+		84AC67FA184EC3190025B393 /* Builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
+		84AC67FB184EC3190025B393 /* Builder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Builder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +106,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84ABA0CE184F71FE0075C72D /* Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				84ABA0CF184F730D0075C72D /* Factory Method.h */,
+				84ABA0D0184F730D0075C72D /* Factory Method.m */,
+				84ABA0D2184F77D70075C72D /* FactoryMethod.png */,
+			);
+			name = "Factory Method";
+			sourceTree = "<group>";
+		};
+		84ABA0D4184F7B080075C72D /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				84ABA0D5184F9EEF0075C72D /* Prototype.h */,
+				84ABA0D6184F9EEF0075C72D /* Prototype.m */,
+				84ABA0D8184FA5F90075C72D /* Prototype.png */,
+			);
+			name = Prototype;
+			sourceTree = "<group>";
+		};
+		84ABA0DA184FAC310075C72D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				84ABA0DB184FAC4A0075C72D /* Singleton.h */,
+				84ABA0DC184FAC4A0075C72D /* Singleton.m */,
+				84ABA0DE184FAF3A0075C72D /* Singleton.png */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
 		84AC67AF184EACC40025B393 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +173,11 @@
 				84AC67CB184EACC40025B393 /* AppDelegate.m */,
 				84AC67CD184EACC40025B393 /* Main_iPhone.storyboard */,
 				84AC67D0184EACC40025B393 /* Main_iPad.storyboard */,
+				84AC67FD184EC47C0025B393 /* AbstractFactory */,
+				84AC67FE184EC4970025B393 /* Builder */,
+				84ABA0CE184F71FE0075C72D /* Factory Method */,
+				84ABA0D4184F7B080075C72D /* Prototype */,
+				84ABA0DA184FAC310075C72D /* Singleton */,
 				84AC67D3184EACC40025B393 /* ViewController.h */,
 				84AC67D4184EACC40025B393 /* ViewController.m */,
 				84AC67D6184EACC40025B393 /* Images.xcassets */,
@@ -153,6 +213,26 @@
 				84AC67E6184EACC40025B393 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AC67FD184EC47C0025B393 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				84AC67F3184EACEC0025B393 /* AbstractFactory.h */,
+				84AC67F4184EACEC0025B393 /* AbstractFactory.m */,
+				84AC67F6184EB7B90025B393 /* AbstractFactory.png */,
+			);
+			name = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		84AC67FE184EC4970025B393 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				84AC67FA184EC3190025B393 /* Builder.h */,
+				84AC67FB184EC3190025B393 /* Builder.m */,
+				84AC67F8184EC3030025B393 /* Builder.png */,
+			);
+			name = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,10 +311,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ABA0D3184F77D70075C72D /* FactoryMethod.png in Resources */,
 				84AC67D2184EACC40025B393 /* Main_iPad.storyboard in Resources */,
 				84AC67D7184EACC40025B393 /* Images.xcassets in Resources */,
+				84AC67F7184EB7B90025B393 /* AbstractFactory.png in Resources */,
 				84AC67CF184EACC40025B393 /* Main_iPhone.storyboard in Resources */,
 				84AC67C6184EACC40025B393 /* InfoPlist.strings in Resources */,
+				84ABA0DF184FAF3A0075C72D /* Singleton.png in Resources */,
+				84ABA0D9184FA5F90075C72D /* Prototype.png in Resources */,
+				84AC67F9184EC3030025B393 /* Builder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +338,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */,
+				84ABA0DD184FAC4A0075C72D /* Singleton.m in Sources */,
+				84AC67F5184EACEC0025B393 /* AbstractFactory.m in Sources */,
 				84AC67D5184EACC40025B393 /* ViewController.m in Sources */,
+				84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */,
 				84AC67CC184EACC40025B393 /* AppDelegate.m in Sources */,
+				84AC67FC184EC3190025B393 /* Builder.m in Sources */,
 				84AC67C8184EACC40025B393 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +564,7 @@
 				84AC67EF184EACC40025B393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84AC67F0184EACC40025B393 /* Build configuration list for PBXNativeTarget "R_DesignPatterns(GOF)Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +573,7 @@
 				84AC67F2184EACC40025B393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
