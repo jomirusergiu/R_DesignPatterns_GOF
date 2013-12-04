@@ -24,6 +24,7 @@
 #import "Factory Method.h"
 #import "Prototype.h"
 #import "Singleton.h"
+#import "Adapter.h"
 
 @interface ViewController : UIViewController
 

@@ -13,6 +13,8 @@
 		84ABA0D9184FA5F90075C72D /* Prototype.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D8184FA5F90075C72D /* Prototype.png */; };
 		84ABA0DD184FAC4A0075C72D /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0DC184FAC4A0075C72D /* Singleton.m */; };
 		84ABA0DF184FAF3A0075C72D /* Singleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0DE184FAF3A0075C72D /* Singleton.png */; };
+		84ABA0E3184FC2130075C72D /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0E2184FC2130075C72D /* Adapter.m */; };
+		84ABA0E5184FD49E0075C72D /* Adapter.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0E4184FD49E0075C72D /* Adapter.png */; };
 		84AC67BC184EACC40025B393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BB184EACC40025B393 /* Foundation.framework */; };
 		84AC67BE184EACC40025B393 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BD184EACC40025B393 /* CoreGraphics.framework */; };
 		84AC67C0184EACC40025B393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC67BF184EACC40025B393 /* UIKit.framework */; };
@@ -54,6 +56,9 @@
 		84ABA0DB184FAC4A0075C72D /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		84ABA0DC184FAC4A0075C72D /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		84ABA0DE184FAF3A0075C72D /* Singleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Singleton.png; sourceTree = "<group>"; };
+		84ABA0E1184FC2130075C72D /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		84ABA0E2184FC2130075C72D /* Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		84ABA0E4184FD49E0075C72D /* Adapter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adapter.png; sourceTree = "<group>"; };
 		84AC67B8184EACC40025B393 /* R_DesignPatterns(GOF).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R_DesignPatterns(GOF).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AC67BB184EACC40025B393 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84AC67BD184EACC40025B393 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +141,16 @@
 			name = Singleton;
 			sourceTree = "<group>";
 		};
+		84ABA0E0184FC1BD0075C72D /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				84ABA0E1184FC2130075C72D /* Adapter.h */,
+				84ABA0E2184FC2130075C72D /* Adapter.m */,
+				84ABA0E4184FD49E0075C72D /* Adapter.png */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
 		84AC67AF184EACC40025B393 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +193,7 @@
 				84ABA0CE184F71FE0075C72D /* Factory Method */,
 				84ABA0D4184F7B080075C72D /* Prototype */,
 				84ABA0DA184FAC310075C72D /* Singleton */,
+				84ABA0E0184FC1BD0075C72D /* Adapter */,
 				84AC67D3184EACC40025B393 /* ViewController.h */,
 				84AC67D4184EACC40025B393 /* ViewController.m */,
 				84AC67D6184EACC40025B393 /* Images.xcassets */,
@@ -316,6 +332,7 @@
 				84AC67D7184EACC40025B393 /* Images.xcassets in Resources */,
 				84AC67F7184EB7B90025B393 /* AbstractFactory.png in Resources */,
 				84AC67CF184EACC40025B393 /* Main_iPhone.storyboard in Resources */,
+				84ABA0E5184FD49E0075C72D /* Adapter.png in Resources */,
 				84AC67C6184EACC40025B393 /* InfoPlist.strings in Resources */,
 				84ABA0DF184FAF3A0075C72D /* Singleton.png in Resources */,
 				84ABA0D9184FA5F90075C72D /* Prototype.png in Resources */,
@@ -338,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ABA0E3184FC2130075C72D /* Adapter.m in Sources */,
 				84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */,
 				84ABA0DD184FAC4A0075C72D /* Singleton.m in Sources */,
 				84AC67F5184EACEC0025B393 /* AbstractFactory.m in Sources */,

@@ -3,7 +3,7 @@ R_DesignPatterns(GOF)
 
 R_DesignPatterns(GOF) is an example project on using and implementation of “Gang Of Four” Design Patterns.
 
-Creational
+Design Patterns
 ---------
 Creational patterns are ones that create objects for you, rather than having you instantiate objects directly. This gives your program more flexibility in deciding which objects need to be created for a given case.
 
@@ -12,6 +12,10 @@ Creational patterns are ones that create objects for you, rather than having you
 - Factory Method - creates objects without specifying the exact class to create.
 - Prototype - creates objects by cloning an existing object.
 - Singleton - restricts object creation for a class to only one instance.
+
+Structural Patterns concern class and object composition. They use inheritance to compose interfaces and define ways to compose objects to obtain new functionality.    
+
+- Adapter - allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
 
 Theese aren’t all of them, so don’t go with yelling right away, i’ll add the rest of em as fast as possible, just have some patience, thank you.
 
@@ -30,6 +34,7 @@ ViewController.h
 #import "Factory Method.h"
 #import "Prototype.h"
 #import "Singleton.h"
+#import “Adapter.h”
 ```
 
 ViewController.m
@@ -66,6 +71,18 @@ ViewController.m
     //In software engineering, the singleton pattern is a design pattern that restricts the Instantiation of a class to one object. This is useful when exactly one object is needed to coordinate actions across the system. The concept is sometimes generalized to systems that operate more efficiently when only one object exists, or that restrict the instantiation to a certain number of objects. The term comes from the mathematical concept of a singleton.
     //We have a singleton class God, we'll try to instantiate it several times let's see what happens.
     [Singleton new];
+
+
+    //======================================================================================//
+    //Structural                                                                            //
+    //Structural Patterns concern class and object composition. They use inheritance to     //
+    //compose interfaces and define ways to compose objects to obtain new functionality.    //
+    //======================================================================================//
+    
+    //Adapter [allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class]
+    //An adapter helps two incompatible interfaces to work together. This is the real world definition for an adapter. Adapter design pattern is used when you want two different classes with incompatible interfaces to work together. Interfaces may be incompatible but the inner functionality should suit the need. The Adapter pattern allows otherwise incompatible classes to work together by converting the interface of one class into an interface expected by the clients.
+    //Let's suppose we have a Laptop and we have to charge it in Europe first, with european standard, and then we'll have to travel to US, and we'll need to charge it there, what do we do? of course we'll use an adapter, so let's try to do the same programatically, and see how it goes.
+    [Adapter new];
 ```
 
 License
