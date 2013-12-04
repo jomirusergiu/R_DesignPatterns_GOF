@@ -1,7 +1,7 @@
 R_DesignPatterns(GOF)
 =================
 
-R_DesignPatterns(GOF) is an example project on using and implementation of “Gang Of Four”(GOF) Design Patterns.
+R_DesignPatterns(GOF) is an example project on using and implementation of “Gang Of Four” Design Patterns.
 
 Creational
 ---------
