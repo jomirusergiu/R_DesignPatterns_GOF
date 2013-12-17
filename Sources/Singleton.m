@@ -61,6 +61,7 @@ static God* god = nil;
     
     if((godOfChristian == godOfMuslim) && (godOfChristian == godOfWar) && (godOfWar == godOfMuslim))
         NSLog(@"All gods are one: %@", [God getInstance].name);
+    NSLog(@"\n");
     return self;
 }
 

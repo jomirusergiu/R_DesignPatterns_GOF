@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  Bridge.h
 //  R_DesignPatterns(GOF)
 //
-//  Created by RocKK on 12/4/13.
+//  Created by RocKK on 12/5/13.
 //  Copyright (c) 2013 RocKK.
 //  All rights reserved.
 //
@@ -14,29 +14,48 @@
 //  by the RocKK.  The name of the
 //  RocKK may not be used to endorse or promote products derived
 //  from this software without specific prior written permission.
-//  THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+//  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 //  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
 //  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-#import <UIKit/UIKit.h>
-#import "AbstractFactory.h"
-#import "Builder.h"
-#import "Factory Method.h"
-#import "Prototype.h"
-#import "Singleton.h"
+#import <Foundation/Foundation.h>
 
-#import "Adapter.h"
-#import "Bridge.h"
-#import "Composite.h"
-#import "Decorator.h"
-#import "Facade.h"
-#import "Flyweight.h"
-#import "Proxy.h"
+#pragma mark Guns
 
-#import "ChainOfResponsibility.h"
-#import "Command.h"
-#import "Interpreter.h"
+//Implementator
+@interface Gun : NSObject
+- (void) fire;
+@end
 
-@interface ViewController : UIViewController
+//Concrete Implementator
+@interface Colt : Gun
+- (void) fire;
+@end
 
+//Concrete Implementator
+@interface SniperRifle : Gun
+- (void) fire;
+@end
+
+#pragma mark Shooters
+
+//Abstraction
+@interface Shooter : NSObject
+{
+    Gun* gun;
+}
+@property (nonatomic, retain) Gun* gun;
+- (void) shoot;
+@end
+
+//Refined Abstraction
+@interface Cowboy : Shooter
+@end
+
+//Refined Abstraction
+@interface Sniper : Shooter
+@end
+
+//Appliation Interface
+@interface Bridge : NSObject
 @end

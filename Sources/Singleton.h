@@ -31,7 +31,7 @@
 + (God*) getInstance;
 @end
 
-#pragma mark - Application [Singleton Interface]
+#pragma mark - Singleton [Application Interface]
 
 //Application [Singleton Interface]
 @interface Singleton : NSObject
