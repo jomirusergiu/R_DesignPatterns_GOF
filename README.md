@@ -30,6 +30,7 @@ Behavioral - most of these design patterns are specifically concerned with commu
 - Interpreter - implements a specialized language.
 - Iterator - accesses the elements of an object sequentially without exposing its underlying representation.
 - Mediator - allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
+- Memento - provides the ability to restore an object to its previous state (undo).
 
 
 Theese aren’t all of them, so don’t go with yelling right away, i’ll add the rest of em as fast as possible, just have some patience, thank you.
@@ -65,6 +66,7 @@ ViewController.h
 #import "Interpreter.h"
 #import "Iterator.h"
 #import "Mediator.h"
+#import "Memento.h"
 ```
 
 ViewController.m
@@ -177,6 +179,12 @@ ViewController.m
     //The mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior
     //In this example we created a prototype of a smart house with some modules, and a centrall processor to take care of everything.
     [Mediator new];
+
+    //Memento provides the ability to restore an object to its previous state (undo).
+    //The memento pattern is a software design pattern that provides the ability to restore an object to its previous state (undo via rollback).
+    //The memento pattern is implemented with three objects: the originator, a caretaker and a memento. The originator is some object that has an internal state. The caretaker is going to do something to the originator, but wants to be able to undo the change. The caretaker first asks the originator for a memento object. Then it does whatever operation (or sequence of operations) it was going to do. To roll back to the state before the operations, it returns the memento object to the originator. The memento object itself is an opaque object (one which the caretaker cannot, or should not, change). When using this pattern, care should be taken if the originator may change other objects or resources - the memento pattern operates on a single object.
+    //We will create a classic example with an originator, then change state couple of times, and load state back.
+    [Memento new];
 ```
 
 License

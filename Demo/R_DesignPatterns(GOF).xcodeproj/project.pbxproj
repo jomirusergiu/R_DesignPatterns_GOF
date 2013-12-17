@@ -32,6 +32,8 @@
 		7D9B9E671860923800D1C0DA /* Iterator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E661860923800D1C0DA /* Iterator.png */; };
 		7D9B9E6B186097EA00D1C0DA /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B9E6A186097EA00D1C0DA /* Mediator.m */; };
 		7D9B9E6D18609CA800D1C0DA /* Mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E6C18609CA800D1C0DA /* Mediator.png */; };
+		7D9B9E711860AD5D00D1C0DA /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B9E701860AD5D00D1C0DA /* Memento.m */; };
+		7D9B9E8A1860C05C00D1C0DA /* Memento.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E891860C05C00D1C0DA /* Memento.png */; };
 		84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D0184F730D0075C72D /* Factory Method.m */; };
 		84ABA0D3184F77D70075C72D /* FactoryMethod.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D2184F77D70075C72D /* FactoryMethod.png */; };
 		84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D6184F9EEF0075C72D /* Prototype.m */; };
@@ -108,6 +110,9 @@
 		7D9B9E69186097EA00D1C0DA /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		7D9B9E6A186097EA00D1C0DA /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
 		7D9B9E6C18609CA800D1C0DA /* Mediator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mediator.png; sourceTree = "<group>"; };
+		7D9B9E6F1860AD5D00D1C0DA /* Memento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memento.h; sourceTree = "<group>"; };
+		7D9B9E701860AD5D00D1C0DA /* Memento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memento.m; sourceTree = "<group>"; };
+		7D9B9E891860C05C00D1C0DA /* Memento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memento.png; sourceTree = "<group>"; };
 		84ABA0CF184F730D0075C72D /* Factory Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Factory Method.h"; sourceTree = "<group>"; };
 		84ABA0D0184F730D0075C72D /* Factory Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Factory Method.m"; sourceTree = "<group>"; };
 		84ABA0D2184F77D70075C72D /* FactoryMethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FactoryMethod.png; sourceTree = "<group>"; };
@@ -298,6 +303,7 @@
 				7D9B9E5E18607A8F00D1C0DA /* Interpreter */,
 				7D9B9E62186084D900D1C0DA /* Iterator */,
 				7D9B9E68186097CD00D1C0DA /* Mediator */,
+				7D9B9E6E1860AD4600D1C0DA /* Memento */,
 			);
 			name = Behavioral;
 			sourceTree = "<group>";
@@ -320,6 +326,16 @@
 				7D9B9E6C18609CA800D1C0DA /* Mediator.png */,
 			);
 			name = Mediator;
+			sourceTree = "<group>";
+		};
+		7D9B9E6E1860AD4600D1C0DA /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				7D9B9E6F1860AD5D00D1C0DA /* Memento.h */,
+				7D9B9E701860AD5D00D1C0DA /* Memento.m */,
+				7D9B9E891860C05C00D1C0DA /* Memento.png */,
+			);
+			name = Memento;
 			sourceTree = "<group>";
 		};
 		84ABA0CE184F71FE0075C72D /* Factory Method */ = {
@@ -540,6 +556,7 @@
 				7D9B9E4F1860739700D1C0DA /* Facade.png in Resources */,
 				7D9B9E6018607ABC00D1C0DA /* Interpreter.jpg in Resources */,
 				7D9B9E571860787A00D1C0DA /* Proxy.png in Resources */,
+				7D9B9E8A1860C05C00D1C0DA /* Memento.png in Resources */,
 				84AC67D2184EACC40025B393 /* Main_iPad.storyboard in Resources */,
 				7D9B9E4C186072D400D1C0DA /* Decorator.png in Resources */,
 				7D9B9E671860923800D1C0DA /* Iterator.png in Resources */,
@@ -594,6 +611,7 @@
 				7D9B9E45186070E100D1C0DA /* Command.m in Sources */,
 				84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */,
 				84AC67CC184EACC40025B393 /* AppDelegate.m in Sources */,
+				7D9B9E711860AD5D00D1C0DA /* Memento.m in Sources */,
 				84AC67FC184EC3190025B393 /* Builder.m in Sources */,
 				84AC67C8184EACC40025B393 /* main.m in Sources */,
 				7D9B9E65186084EF00D1C0DA /* Iterator.m in Sources */,
