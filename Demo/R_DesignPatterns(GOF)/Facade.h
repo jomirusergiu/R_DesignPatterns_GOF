@@ -66,7 +66,7 @@
 - (void) doMyJob;
 @end
 
-#pragma mark Composite [Application Interface]
+#pragma mark [Application Interface]
 
 //Application Interface
 @interface Facade : NSObject

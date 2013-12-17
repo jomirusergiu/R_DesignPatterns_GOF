@@ -28,7 +28,7 @@
 
 #pragma mark - Structural Example
 
-// nterpreter pattern -- Structural example
+//Interpreter pattern -- Structural example
 //Abstract Expression
 @implementation AbstractExpression
 -(void)InterpretFrom:(Context *)context{}
@@ -140,7 +140,7 @@
 }
 @end
 
-#pragma mark Composite [Application Interface]
+#pragma mark [Application Interface]
 
 //Application Interface
 @implementation Interpreter

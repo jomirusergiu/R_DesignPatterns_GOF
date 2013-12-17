@@ -60,9 +60,8 @@
 -(void) undoAll;
 @end
 
-#pragma mark Composite [Application Interface]
+#pragma mark [Application Interface]
 
 //Application Interface
 @interface Command : NSObject
-
 @end

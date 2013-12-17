@@ -28,6 +28,8 @@ Behavioral - most of these design patterns are specifically concerned with commu
 - Chain of responsibility - delegates commands to a chain of processing objects.
 - Command - creates objects which encapsulate actions and parameters.
 - Interpreter - implements a specialized language.
+- Iterator - accesses the elements of an object sequentially without exposing its underlying representation.
+- Mediator - allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
 
 
 Theese aren’t all of them, so don’t go with yelling right away, i’ll add the rest of em as fast as possible, just have some patience, thank you.
@@ -35,6 +37,7 @@ Theese aren’t all of them, so don’t go with yelling right away, i’ll add t
 UML Diagrams
 ----------
 You can find UML diagrams of implemented patterns inside, hope that you’ll find them useful for getting to know what is going on in the code easier.
+Also you can find al UML diagrams with description in designpatternscard.pdf.
 
 Usage
 =====
@@ -60,6 +63,8 @@ ViewController.h
 #import "ChainOfResponsibility.h"
 #import "Command.h"
 #import "Interpreter.h"
+#import "Iterator.h"
+#import "Mediator.h"
 ```
 
 ViewController.m
@@ -161,6 +166,17 @@ ViewController.m
     //In First example, the structural code demonstrates the Interpreter patterns, which using a defined grammer, provides the interpreter that processes parsed statements.
     //In Second example, the real-world code demonstrates the Interpreter pattern which is used to convert a Roman numeral to a decimal.
     [Interpreter new];
+
+    //Iterator accesses the elements of an object sequentially without exposing its underlying representation.
+    //The essence of the Iterator Factory method Pattern is to "Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.".
+    //In object-oriented programming, the iterator pattern is a design pattern in which an iterator is used to traverse a container and access the container's elements. The iterator pattern decouples algorithms from containers; in some cases, algorithms are necessarily container-specific and thus cannot be decoupled.
+    //The simpliest implementation of itrator in Objective c would be enumerator. For our example let's create a warehouse with good and bad items, and two iterators which would show us items of both types.
+    [Iterator new];
+    
+    //Mediator allows loose coupling between classes by being the only class that has detailed knowledge of their methods.
+    //The mediator pattern defines an object that encapsulates how a set of objects interact. This pattern is considered to be a behavioral pattern due to the way it can alter the program's running behavior
+    //In this example we created a prototype of a smart house with some modules, and a centrall processor to take care of everything.
+    [Mediator new];
 ```
 
 License

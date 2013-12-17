@@ -50,7 +50,7 @@
 @interface ChristmasTreeLights : PrettyDecorator
 @end
 
-#pragma mark Composite [Application Interface]
+#pragma mark [Application Interface]
 
 //Application Interface
 @interface Decorator : NSObject

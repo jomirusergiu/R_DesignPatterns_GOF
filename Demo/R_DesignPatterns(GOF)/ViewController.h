@@ -36,6 +36,8 @@
 #import "ChainOfResponsibility.h"
 #import "Command.h"
 #import "Interpreter.h"
+#import "Iterator.h"
+#import "Mediator.h"
 
 @interface ViewController : UIViewController
 
