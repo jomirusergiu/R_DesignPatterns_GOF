@@ -53,9 +53,9 @@ NSMutableDictionary *_imageDictionary;
 -(id) init
 {
     self = [super init];
-    self.name = @"Dragon";
+    self.name = @"Flyweight_Dragon";
     self.health = 150;
-    self.image = [FlyweightImageFactory getImage:@"dragon"];
+    self.image = [FlyweightImageFactory getImage:@"Flyweight_Dragon"];
     return self;
     
 }
@@ -67,9 +67,9 @@ NSMutableDictionary *_imageDictionary;
 {
     self = [super init];
     
-    self.name = @"Goblin";
+    self.name = @"Flyweight_Goblin";
     self.health = 20;
-    self.image = [FlyweightImageFactory getImage:@"goblin"];
+    self.image = [FlyweightImageFactory getImage:@"Flyweight_Goblin"];
     return self;
     
 }
