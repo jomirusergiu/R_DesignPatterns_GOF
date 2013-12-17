@@ -42,12 +42,24 @@ Usage
 ViewController.h
 -------------
 ```Objective-C
+#import <UIKit/UIKit.h>
 #import "AbstractFactory.h"
 #import "Builder.h"
 #import "Factory Method.h"
 #import "Prototype.h"
 #import "Singleton.h"
-#import “Adapter.h”
+
+#import "Adapter.h"
+#import "Bridge.h"
+#import "Composite.h"
+#import "Decorator.h"
+#import "Facade.h"
+#import "Flyweight.h"
+#import "Proxy.h"
+
+#import "ChainOfResponsibility.h"
+#import "Command.h"
+#import "Interpreter.h"
 ```
 
 ViewController.m
