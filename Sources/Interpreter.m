@@ -28,7 +28,7 @@
 
 #pragma mark - Structural Example
 
-// nterpreter pattern -- Structural example
+//Interpreter pattern -- Structural example
 //Abstract Expression
 @implementation AbstractExpression
 -(void)InterpretFrom:(Context *)context{}
@@ -62,26 +62,26 @@
         return;
     while ([[context Input] hasPrefix:_Nine])
     {
-        context.Output = [NSString stringWithFormat:@"%d", [context.Output integerValue]+  (9*_Multiplier)];
+        context.Output = [NSString stringWithFormat:@"%ld", [context.Output integerValue]+  (9*_Multiplier)];
         NSRange range = [context.Input rangeOfString:_Nine];
         context.Input = [context.Input stringByReplacingCharactersInRange:range withString:@""];
     }
     while ([[context Input] hasPrefix:_Four])
     {
-        context.Output = [NSString stringWithFormat:@"%d", [context.Output integerValue]+  (4*_Multiplier)];
+        context.Output = [NSString stringWithFormat:@"%ld", [context.Output integerValue]+  (4*_Multiplier)];
         NSRange range = [context.Input rangeOfString:_Four];
         context.Input = [context.Input stringByReplacingCharactersInRange:range withString:@""];
     }
     while ([[context Input] hasPrefix:_Five])
     {
-        context.Output = [NSString stringWithFormat:@"%d", [context.Output integerValue]+  (5*_Multiplier)];
+        context.Output = [NSString stringWithFormat:@"%ld", [context.Output integerValue]+  (5*_Multiplier)];
         NSRange range = [context.Input rangeOfString:_Five];
         context.Input = [context.Input stringByReplacingCharactersInRange:range withString:@""];
     }
     
     while ([[context Input] hasPrefix:_One])
     {
-        context.Output = [NSString stringWithFormat:@"%d", [context.Output integerValue]+  (1*_Multiplier)];
+        context.Output = [NSString stringWithFormat:@"%ld", [context.Output integerValue]+  (1*_Multiplier)];
         NSRange range = [context.Input rangeOfString:_One];
         context.Input = [context.Input stringByReplacingCharactersInRange:range withString:@""];
     }
@@ -140,7 +140,7 @@
 }
 @end
 
-#pragma mark Composite [Application Interface]
+#pragma mark [Application Interface]
 
 //Application Interface
 @implementation Interpreter

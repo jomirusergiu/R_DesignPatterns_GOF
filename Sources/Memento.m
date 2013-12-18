@@ -103,14 +103,17 @@
 @implementation Memento
 - (id)init
 {
-    Caretaker *careTaker = [Caretaker new];
+    NSLog(@"Memento Created");
     
+    Caretaker *careTaker = [Caretaker new];
     [careTaker changeValue];
     [careTaker saveState];
     [careTaker changeValue];
     [careTaker changeValue];
     [careTaker changeValue];
     [careTaker loadState];
+    
+    NSLog(@"\n");
     return self;
 }
 @end

@@ -1,8 +1,8 @@
 //
-//  Flyweight.h
+//  Visitor.h
 //  R_DesignPatterns(GOF)
 //
-//  Created by RocKK on 12/6/13.
+//  Created by RocKK on 12/18/13.
 //  Copyright (c) 2013 RocKK.
 //  All rights reserved.
 //
@@ -20,34 +20,42 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark Basic Unit
+#pragma mark Basic Visitor
 
-//Basic Unit
-@interface BasicUnit : NSObject
+//Basic Visitor
+@protocol BasicVisitor
+-(void) visit:(id)anObject;
+@end
+
+//Warehouse Item
+@interface WarehouseItem : NSObject
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic) int health;
-@property (nonatomic, strong) UIImage *image;
+@property (nonatomic) BOOL isBroken;
+@property (nonatomic) int price;
+-(id) initWithArgs:(NSString *)aName andQuality:(BOOL) isBrokenState andPrice:(int)aPrice;
 @end
 
-#pragma mark FlyweightImageFactory
-
-//FlyweightImageFactory
-@interface FlyweightImageFactory : NSObject
-+(UIImage *) getImage:(NSString *)imageName;
+//Warehouse
+@interface Warehouse : NSObject
+{
+@private NSMutableArray *_itemsArray;
+}
+-(void) addItem:(WarehouseItem *) anItem;
+-(void) accept:(id) visitor;
 @end
 
-#pragma mark Concrete Units
+#pragma mark Visitors
 
-//Dragon
-@interface Dragon : BasicUnit
+//Quality Checker Visitor
+@interface QualityCheckerVisitor : NSObject
 @end
 
-//Goblin
-@interface Goblin : BasicUnit
+//Price Checker Visitor
+@interface PriceCheckerVisitor : NSObject
 @end
 
 #pragma mark [Application Interface]
 
-//Application Interface
-@interface Flyweight : NSObject
+//[Application Interface]
+@interface Visitor : NSObject
 @end

@@ -1,8 +1,8 @@
 //
-//  Flyweight.h
+//  Template.h
 //  R_DesignPatterns(GOF)
 //
-//  Created by RocKK on 12/6/13.
+//  Created by RocKK on 12/18/13.
 //  Copyright (c) 2013 RocKK.
 //  All rights reserved.
 //
@@ -20,34 +20,30 @@
 
 #import <Foundation/Foundation.h>
 
-#pragma mark Basic Unit
+#pragma mark Any Phone Template
 
-//Basic Unit
-@interface BasicUnit : NSObject
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic) int health;
-@property (nonatomic, strong) UIImage *image;
+//Any Phone Template
+@interface AnyPhoneTemplate : NSObject
+-(void) makePhone;
+-(void) takeBox;
+-(void) takeMicrophone;
+-(void) takeCamera;
+-(void) assemble;
 @end
 
-#pragma mark FlyweightImageFactory
-
-//FlyweightImageFactory
-@interface FlyweightImageFactory : NSObject
-+(UIImage *) getImage:(NSString *)imageName;
+//iPhone Maker
+@interface iPhoneMaker : AnyPhoneTemplate
+-(void) design;
 @end
 
-#pragma mark Concrete Units
-
-//Dragon
-@interface Dragon : BasicUnit
-@end
-
-//Goblin
-@interface Goblin : BasicUnit
+//Android Maker
+@interface AndroidMaker : AnyPhoneTemplate
+-(void) addRam;
+-(void) addCPU;
 @end
 
 #pragma mark [Application Interface]
 
-//Application Interface
-@interface Flyweight : NSObject
+//[Application Interface]
+@interface Template : NSObject
 @end
