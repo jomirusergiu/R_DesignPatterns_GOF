@@ -34,6 +34,8 @@
 		7D9B9E6D18609CA800D1C0DA /* Mediator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E6C18609CA800D1C0DA /* Mediator.png */; };
 		7D9B9E711860AD5D00D1C0DA /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9B9E701860AD5D00D1C0DA /* Memento.m */; };
 		7D9B9E8A1860C05C00D1C0DA /* Memento.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E891860C05C00D1C0DA /* Memento.png */; };
+		7DDB4B491861D8FB002509EC /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB4B481861D8FB002509EC /* Observer.m */; };
+		7DDB4B4B1861E085002509EC /* Observer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB4B4A1861E085002509EC /* Observer.png */; };
 		84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D0184F730D0075C72D /* Factory Method.m */; };
 		84ABA0D3184F77D70075C72D /* FactoryMethod.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D2184F77D70075C72D /* FactoryMethod.png */; };
 		84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D6184F9EEF0075C72D /* Prototype.m */; };
@@ -113,6 +115,9 @@
 		7D9B9E6F1860AD5D00D1C0DA /* Memento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Memento.h; sourceTree = "<group>"; };
 		7D9B9E701860AD5D00D1C0DA /* Memento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Memento.m; sourceTree = "<group>"; };
 		7D9B9E891860C05C00D1C0DA /* Memento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Memento.png; sourceTree = "<group>"; };
+		7DDB4B471861D8FB002509EC /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		7DDB4B481861D8FB002509EC /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		7DDB4B4A1861E085002509EC /* Observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Observer.png; sourceTree = "<group>"; };
 		84ABA0CF184F730D0075C72D /* Factory Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Factory Method.h"; sourceTree = "<group>"; };
 		84ABA0D0184F730D0075C72D /* Factory Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Factory Method.m"; sourceTree = "<group>"; };
 		84ABA0D2184F77D70075C72D /* FactoryMethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FactoryMethod.png; sourceTree = "<group>"; };
@@ -304,6 +309,7 @@
 				7D9B9E62186084D900D1C0DA /* Iterator */,
 				7D9B9E68186097CD00D1C0DA /* Mediator */,
 				7D9B9E6E1860AD4600D1C0DA /* Memento */,
+				7DDB4B461861D8E8002509EC /* Observer */,
 			);
 			name = Behavioral;
 			sourceTree = "<group>";
@@ -336,6 +342,16 @@
 				7D9B9E891860C05C00D1C0DA /* Memento.png */,
 			);
 			name = Memento;
+			sourceTree = "<group>";
+		};
+		7DDB4B461861D8E8002509EC /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				7DDB4B471861D8FB002509EC /* Observer.h */,
+				7DDB4B481861D8FB002509EC /* Observer.m */,
+				7DDB4B4A1861E085002509EC /* Observer.png */,
+			);
+			name = Observer;
 			sourceTree = "<group>";
 		};
 		84ABA0CE184F71FE0075C72D /* Factory Method */ = {
@@ -565,6 +581,7 @@
 				84AC67F7184EB7B90025B393 /* AbstractFactory.png in Resources */,
 				7D9B9E42186070E100D1C0DA /* Flyweight_Goblin.jpeg in Resources */,
 				84AC67CF184EACC40025B393 /* Main_iPhone.storyboard in Resources */,
+				7DDB4B4B1861E085002509EC /* Observer.png in Resources */,
 				7D9B9E6D18609CA800D1C0DA /* Mediator.png in Resources */,
 				7D9B9E5D18607A3F00D1C0DA /* Command.gif in Resources */,
 				84ABA0E5184FD49E0075C72D /* Adapter.png in Resources */,
@@ -616,6 +633,7 @@
 				84AC67C8184EACC40025B393 /* main.m in Sources */,
 				7D9B9E65186084EF00D1C0DA /* Iterator.m in Sources */,
 				7D9B9E3D186070E100D1C0DA /* Composite.m in Sources */,
+				7DDB4B491861D8FB002509EC /* Observer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

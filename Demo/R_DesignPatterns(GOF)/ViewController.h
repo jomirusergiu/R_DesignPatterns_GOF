@@ -39,6 +39,7 @@
 #import "Iterator.h"
 #import "Mediator.h"
 #import "Memento.h"
+#import "Observer.h"
 
 @interface ViewController : UIViewController
 

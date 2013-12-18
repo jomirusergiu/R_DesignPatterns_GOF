@@ -139,6 +139,11 @@
     //The memento pattern is implemented with three objects: the originator, a caretaker and a memento. The originator is some object that has an internal state. The caretaker is going to do something to the originator, but wants to be able to undo the change. The caretaker first asks the originator for a memento object. Then it does whatever operation (or sequence of operations) it was going to do. To roll back to the state before the operations, it returns the memento object to the originator. The memento object itself is an opaque object (one which the caretaker cannot, or should not, change). When using this pattern, care should be taken if the originator may change other objects or resources - the memento pattern operates on a single object.
     //We will create a classic example with an originator, then change state couple of times, and load state back.
     [Memento new];
+    
+    //Observer is a publish/subscribe pattern which allows a number of observer objects to see an event.
+    //The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. It is mainly used to implement distributed event handling systems. The Observer pattern is also a key part in the familiar Model View Controller (MVC) architectural pattern. In fact the observer pattern was first implemented in Smalltalk's MVC based user interface framework. The observer pattern is implemented in numerous programming libraries and systems, including almost all GUI toolkits.
+    //In our first exaple we'll create a standard Oberver through protocols to show it's basic usage, and then in second one we'll try to do this through Key Value Observing. [Key-value coding is a mechanism for accessing an object’s properties indirectly, using strings to identify properties, rather than through invocation of an accessor method or accessing them directly through instance variables.] Also Observer may be done through NSNotificationCenter analogically.
+    [Observer new];
 }
 
 - (void)didReceiveMemoryWarning
