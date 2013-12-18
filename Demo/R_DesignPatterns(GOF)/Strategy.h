@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  Strategy.h
 //  R_DesignPatterns(GOF)
 //
-//  Created by RocKK on 12/4/13.
+//  Created by RocKK on 12/18/13.
 //  Copyright (c) 2013 RocKK.
 //  All rights reserved.
 //
@@ -14,35 +14,40 @@
 //  by the RocKK.  The name of the
 //  RocKK may not be used to endorse or promote products derived
 //  from this software without specific prior written permission.
-//  THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+//  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 //  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
 //  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-#import <UIKit/UIKit.h>
-#import "AbstractFactory.h"
-#import "Builder.h"
-#import "Factory Method.h"
-#import "Prototype.h"
-#import "Singleton.h"
+#import <Foundation/Foundation.h>
 
-#import "Adapter.h"
-#import "Bridge.h"
-#import "Composite.h"
-#import "Decorator.h"
-#import "Facade.h"
-#import "Flyweight.h"
-#import "Proxy.h"
+#pragma mark Strategy
 
-#import "ChainOfResponsibility.h"
-#import "Command.h"
-#import "Interpreter.h"
-#import "Iterator.h"
-#import "Mediator.h"
-#import "Memento.h"
-#import "Observer.h"
-#import "State.h"
-#import "Strategy.h"
+//Basic Strategy
+@interface BasicStrategy : NSObject
+-(void) actionCharacter1;
+-(void) actionCharacter2;
+-(void) actionCharacter3;
+@end
 
-@interface ViewController : UIViewController
+//Attack Strategy
+@interface AttackStrategy : BasicStrategy
+@end
 
+//Defence Strategy
+@interface DefenceStrategy : BasicStrategy
+@end
+
+#pragma mark Player
+
+//Player
+@interface Player : NSObject
+@property (nonatomic, strong) BasicStrategy *_strategy;
+-(void) makeAction;
+-(void) changeStrategy:(BasicStrategy *) strategy;
+@end
+
+#pragma mark [Application Interface]
+
+//Application Interface
+@interface Strategy : NSObject
 @end

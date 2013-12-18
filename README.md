@@ -33,6 +33,7 @@ Behavioral - most of these design patterns are specifically concerned with commu
 - Memento - provides the ability to restore an object to its previous state (undo).
 - Observer - is a publish/subscribe pattern which allows a number of observer objects to see an event.
 - State - allows an object to alter its behavior when its internal state changes.
+- Strategy - allows one of a family of algorithms to be selected on-the-fly at runtime.
 
 
 Theese aren’t all of them, so don’t go with yelling right away, i’ll add the rest of em as fast as possible, just have some patience, thank you.
@@ -71,6 +72,7 @@ ViewController.h
 #import "Memento.h"
 #import "Observer.h"
 #import "State.h"
+#import "Strategy.h"
 ```
 
 ViewController.m
@@ -199,6 +201,12 @@ ViewController.m
     //The state pattern, which closely resembles Strategy Pattern, is a behavioral software design pattern, also known as the objects for states pattern. This pattern is used in computer programming to encapsulate varying behavior for the same routine based on an object's state object. This can be a cleaner way for an object to change its behavior at runtime without resorting to large monolithic conditional statements
     //This time let's create a state interface and two implementations. The state's method has a reference to the context object and is able to change its state. We'll change state after StateA is invoked once or StateB is invoked twice, so we'll have one lowercase, then two uppercases, then one lowercase again and so on.
     [State new];
+
+    //Strategy allows one of a family of algorithms to be selected on-the-fly at runtime.
+    //In computer programming, the strategy pattern (also known as the policy pattern) is a software design pattern, whereby an algorithm's behaviour can be selected at runtime. Formally speaking, the strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it. Strategy is one of the patterns included in the influential book "Design Patterns" by Gamma et al. that popularized the concept of using patterns in software design.
+    //For instance, a class that performs validation on incoming data may use a strategy pattern to select a validation algorithm based on the type of data, the source of the data, user choice, or other discriminating factors. These factors are not known for each case until run-time, and may require radically different validation to be performed. The validation strategies, encapsulated separately from the validating object, may be used by other validating objects in different areas of the system (or even different systems) without code duplication.
+    //Let's take as example an RPG game such as Dungeon Siege where we have several heroes, and we should come up with different strategies for combinations between them. For this we'll apply strategy design pattern, let's see how it goes.
+    [Strategy new];
 ```
 
 License
