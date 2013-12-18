@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  State.h
 //  R_DesignPatterns(GOF)
 //
-//  Created by RocKK on 12/4/13.
+//  Created by RocKK on 12/18/13.
 //  Copyright (c) 2013 RocKK.
 //  All rights reserved.
 //
@@ -14,34 +14,43 @@
 //  by the RocKK.  The name of the
 //  RocKK may not be used to endorse or promote products derived
 //  from this software without specific prior written permission.
-//  THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+//  THIS SOFTWARE IS PROVIDED ''AS IS'' AND WITHOUT ANY EXPRESS OR
 //  IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
 //  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
-#import <UIKit/UIKit.h>
-#import "AbstractFactory.h"
-#import "Builder.h"
-#import "Factory Method.h"
-#import "Prototype.h"
-#import "Singleton.h"
+#import <Foundation/Foundation.h>
 
-#import "Adapter.h"
-#import "Bridge.h"
-#import "Composite.h"
-#import "Decorator.h"
-#import "Facade.h"
-#import "Flyweight.h"
-#import "Proxy.h"
+#pragma mark States
 
-#import "ChainOfResponsibility.h"
-#import "Command.h"
-#import "Interpreter.h"
-#import "Iterator.h"
-#import "Mediator.h"
-#import "Memento.h"
-#import "Observer.h"
-#import "State.h"
+@class StateContext;
 
-@interface ViewController : UIViewController
+//SateLike
+@interface StateLike : NSObject
+- (void) writeName:(StateContext*) context andString:(NSString*)name;
+@end
 
+//StateA
+@interface StateA : StateLike
+@end
+
+//StateB
+@interface StateB : StateLike{
+@private int i;
+}
+@end
+
+#pragma mark Context
+
+//Context
+@interface StateContext : NSString{
+@private StateLike *myState;
+}
+- (void) setState:(StateLike*)newState;
+- (void) writeName:(NSString*)name;
+@end
+
+#pragma mark [Application Interface]
+
+//Application Interface
+@interface State : NSObject
 @end

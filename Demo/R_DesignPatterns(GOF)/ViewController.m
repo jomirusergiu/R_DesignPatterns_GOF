@@ -142,8 +142,13 @@
     
     //Observer is a publish/subscribe pattern which allows a number of observer objects to see an event.
     //The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. It is mainly used to implement distributed event handling systems. The Observer pattern is also a key part in the familiar Model View Controller (MVC) architectural pattern. In fact the observer pattern was first implemented in Smalltalk's MVC based user interface framework. The observer pattern is implemented in numerous programming libraries and systems, including almost all GUI toolkits.
-    //In our first exaple we'll create a standard Oberver through protocols to show it's basic usage, and then in second one we'll try to do this through Key Value Observing. [Key-value coding is a mechanism for accessing an object’s properties indirectly, using strings to identify properties, rather than through invocation of an accessor method or accessing them directly through instance variables.] Also Observer may be done through NSNotificationCenter analogically.
+    //In our first exapmle we'll create a standard Oberver through protocols to show it's basic usage, and then in second one we'll try to do this through Key Value Observing. [Key-value coding is a mechanism for accessing an object’s properties indirectly, using strings to identify properties, rather than through invocation of an accessor method or accessing them directly through instance variables.] Also Observer may be done through NSNotificationCenter analogically.
     [Observer new];
+    
+    //State allows an object to alter its behavior when its internal state changes.
+    //The state pattern, which closely resembles Strategy Pattern, is a behavioral software design pattern, also known as the objects for states pattern. This pattern is used in computer programming to encapsulate varying behavior for the same routine based on an object's state object. This can be a cleaner way for an object to change its behavior at runtime without resorting to large monolithic conditional statements
+    //This time let's create a state interface and two implementations. The state's method has a reference to the context object and is able to change its state. We'll change state after StateA is invoked once or StateB is invoked twice, so we'll have one lowercase, then two uppercases, then one lowercase again and so on.
+    [State new];
 }
 
 - (void)didReceiveMemoryWarning

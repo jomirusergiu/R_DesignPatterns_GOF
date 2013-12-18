@@ -36,6 +36,8 @@
 		7D9B9E8A1860C05C00D1C0DA /* Memento.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D9B9E891860C05C00D1C0DA /* Memento.png */; };
 		7DDB4B491861D8FB002509EC /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB4B481861D8FB002509EC /* Observer.m */; };
 		7DDB4B4B1861E085002509EC /* Observer.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB4B4A1861E085002509EC /* Observer.png */; };
+		7DDB4B4F1861E240002509EC /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDB4B4E1861E240002509EC /* State.m */; };
+		7DDB4B511861EB5E002509EC /* State.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DDB4B501861EB5E002509EC /* State.png */; };
 		84ABA0D1184F730D0075C72D /* Factory Method.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D0184F730D0075C72D /* Factory Method.m */; };
 		84ABA0D3184F77D70075C72D /* FactoryMethod.png in Resources */ = {isa = PBXBuildFile; fileRef = 84ABA0D2184F77D70075C72D /* FactoryMethod.png */; };
 		84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ABA0D6184F9EEF0075C72D /* Prototype.m */; };
@@ -118,6 +120,9 @@
 		7DDB4B471861D8FB002509EC /* Observer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 		7DDB4B481861D8FB002509EC /* Observer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
 		7DDB4B4A1861E085002509EC /* Observer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Observer.png; sourceTree = "<group>"; };
+		7DDB4B4D1861E240002509EC /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		7DDB4B4E1861E240002509EC /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		7DDB4B501861EB5E002509EC /* State.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = State.png; sourceTree = "<group>"; };
 		84ABA0CF184F730D0075C72D /* Factory Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Factory Method.h"; sourceTree = "<group>"; };
 		84ABA0D0184F730D0075C72D /* Factory Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Factory Method.m"; sourceTree = "<group>"; };
 		84ABA0D2184F77D70075C72D /* FactoryMethod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FactoryMethod.png; sourceTree = "<group>"; };
@@ -310,6 +315,7 @@
 				7D9B9E68186097CD00D1C0DA /* Mediator */,
 				7D9B9E6E1860AD4600D1C0DA /* Memento */,
 				7DDB4B461861D8E8002509EC /* Observer */,
+				7DDB4B4C1861E230002509EC /* State */,
 			);
 			name = Behavioral;
 			sourceTree = "<group>";
@@ -352,6 +358,16 @@
 				7DDB4B4A1861E085002509EC /* Observer.png */,
 			);
 			name = Observer;
+			sourceTree = "<group>";
+		};
+		7DDB4B4C1861E230002509EC /* State */ = {
+			isa = PBXGroup;
+			children = (
+				7DDB4B4D1861E240002509EC /* State.h */,
+				7DDB4B4E1861E240002509EC /* State.m */,
+				7DDB4B501861EB5E002509EC /* State.png */,
+			);
+			name = State;
 			sourceTree = "<group>";
 		};
 		84ABA0CE184F71FE0075C72D /* Factory Method */ = {
@@ -576,6 +592,7 @@
 				84AC67D2184EACC40025B393 /* Main_iPad.storyboard in Resources */,
 				7D9B9E4C186072D400D1C0DA /* Decorator.png in Resources */,
 				7D9B9E671860923800D1C0DA /* Iterator.png in Resources */,
+				7DDB4B511861EB5E002509EC /* State.png in Resources */,
 				84AC67D7184EACC40025B393 /* Images.xcassets in Resources */,
 				7D9B9E551860771700D1C0DA /* designpatternscard.pdf in Resources */,
 				84AC67F7184EB7B90025B393 /* AbstractFactory.png in Resources */,
@@ -616,6 +633,7 @@
 				84ABA0D7184F9EEF0075C72D /* Prototype.m in Sources */,
 				7D9B9E2618606FAA00D1C0DA /* Bridge.m in Sources */,
 				7D9B9E3F186070E100D1C0DA /* Facade.m in Sources */,
+				7DDB4B4F1861E240002509EC /* State.m in Sources */,
 				84ABA0DD184FAC4A0075C72D /* Singleton.m in Sources */,
 				7D9B9E40186070E100D1C0DA /* Flyweight.m in Sources */,
 				7D9B9E43186070E100D1C0DA /* Proxy.m in Sources */,

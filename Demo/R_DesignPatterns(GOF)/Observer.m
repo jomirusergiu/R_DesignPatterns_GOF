@@ -89,7 +89,7 @@
 @implementation Observer
 - (id)init
 {
-    NSLog(@"Observer created");
+    NSLog(@"Observer Created");
     
     NSLog(@"///////Standard///////");
     StandardSubjectImplementation *subj = [StandardSubjectImplementation new];
